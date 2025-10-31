@@ -1,6 +1,8 @@
-const MainContent = () => {
+import Button from "./Button";
+
+const MainContent = ({ btnClass }) => {
   return (
-    <div>
+    <>
       <div className="flex flex-col items-end mr-16 mt-53">
         <h1 className="text-6xl font-bold text-[#192943]">
           تبدأ قصة تحولك من هنا
@@ -9,11 +11,12 @@ const MainContent = () => {
           .انضم إلى المئات من الأشخاص الذين غيّروا حياتهم ببرنامجنا المثبت
           فعاليته
         </p>
-        <button className="cursor-pointer text-xl text-white bg-[#028BFF] rounded-2xl px-8 py-2">
-          ابدأ رحلتك الآن
-        </button>
+        <Button
+          style={`${btnClass.btn} ${btnClass.blueBtn} ${btnClass.bigBtn} px-8 py-2`}
+          value={"ابدأ رحلتك الآن"}
+        />
       </div>
-    </div>
+    </>
   );
 };
 
