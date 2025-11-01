@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "./Button";
 
-const Header = ({ btnClass, color }) => {
+export default function Header({ btnClass, color }) {
   return (
     <>
       <div className="my-3 mx-10 flex justify-between items-center">
@@ -32,6 +32,4 @@ const Header = ({ btnClass, color }) => {
       <hr className="text-[#E5E7EB]" />
     </>
   );
-};
-
-export default Header;
+}
